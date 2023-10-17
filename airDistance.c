@@ -17,5 +17,6 @@ int main(){
     airDistance=acos(sin(latitudeOrigin) * sin(latitudeDestination) + cos(latitudeOrigin) * cos(latitudeDestination)*cos(delta)) *rediousEarth;
     printf("Origin = %lg degree , %lg degree\n",latitudeOrigin*=180/M_PI,longtitudeOrigin*=180/M_PI);
     printf("Destination = %lg degree, %lg degree\n",latitudeDestination*=180/M_PI, longtitudeDestination*=180/M_PI);
+    printf("Air distance is %lg Km\n",airDistance);
     return 0;
 }
