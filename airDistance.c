@@ -14,6 +14,7 @@ int main(){
     longtitudeOrigin*=(M_PI/180);
     longtitudeDestination*=(M_PI/180);
     delta=longtitudeDestination-longtitudeOrigin;
+    airDistance=acos(sin(latitudeOrigin) * sin(latitudeDestination) + cos(latitudeOrigin) * cos(latitudeDestination)*cos(delta)) *rediousEarth;
 
     return 0;
 }
